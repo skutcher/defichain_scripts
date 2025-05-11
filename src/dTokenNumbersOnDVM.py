@@ -3,7 +3,7 @@ from defichain import Node
 import json
 
 # Specify connection
-node =  Node("QqaKPxfe", "f7e06381f696be1a3391afac4bb1ad4536d929dd26bcf2fc9be1dbcad7f5a9e0", url="127.0.0.1", port=8554)
+node =  Node("****", "*****", url="127.0.0.1", port=8554)
 
 #List of Poolpairs with DUSD 
 LMpoolsList=node.poolpair.listpoolpairs(start=367,limit=500)

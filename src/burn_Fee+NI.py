@@ -1,8 +1,8 @@
 # Import node object
 from defichain import Node
 
-# Specify connection
-node =  Node("QqaKPxfe", "f7e06381f696be1a3391afac4bb1ad4536d929dd26bcf2fc9be1dbcad7f5a9e0", url="127.0.0.1", port=8554)
+# Specify connection - fill data for your node
+node =  Node("****", "*****", url="127.0.0.1", port=8554)
 
 
 
