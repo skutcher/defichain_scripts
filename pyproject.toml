@@ -1,0 +1,13 @@
+# https://blog.claude.nl/posts/how-to-structure-a-python-project-with-multiple-entry-points/
+[project]
+name = "defichainScripts"
+version = "0.1.0"
+dependencies = [
+    "defichain",
+    "python-dotenv",
+]
+
+[project.scripts]
+defichain_burn_fee_ni = "defichainScripts.stats.burn_fee_ni:main"
+defichain_dtoken_dvm = "defichainScripts.stats.dTokenNumbersOnDVM:main"
+defichain_track = "defichainScripts.track.track:main"
