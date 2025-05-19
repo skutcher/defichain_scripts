@@ -11,7 +11,7 @@ def calc(blockHeight):
     node =  Node(username, password, url="127.0.0.1", port=8554)
 
     while node.blockchain.getblockcount() < blockHeight:
-        print('sleep 3s')
+        # print('sleep 3s')
         time.sleep(3)
 
     #List of Poolpairs with DUSD
