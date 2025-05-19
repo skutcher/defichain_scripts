@@ -10,4 +10,5 @@ dependencies = [
 [project.scripts]
 defichain_burn_fee_ni = "defichainScripts.stats.burn_fee_ni:main"
 defichain_dtoken_dvm = "defichainScripts.stats.dTokenNumbersOnDVM:main"
+defichain_vaults = "defichainScripts.stats.vaults:main"
 defichain_track = "defichainScripts.track.track:main"
