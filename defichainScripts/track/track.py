@@ -5,6 +5,8 @@ import json
 #pip install python-dotenv
 from dotenv import load_dotenv
 from defichain import Node
+#enable line buffering so that pipes to tee works
+sys.stdout.reconfigure(line_buffering=True)
 
 load_dotenv()
 bin=os.getenv('CLI')
