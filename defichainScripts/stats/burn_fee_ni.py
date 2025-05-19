@@ -1,16 +1,15 @@
 import os
+import sys
 from defichain import Node
 from dotenv import load_dotenv
 
-def calc():
+def calc(blockHeight):
     username=os.getenv('USERNAME')
     password=os.getenv('PASSWORD')
     node =  Node(username, password, url="127.0.0.1", port=8554)
 
-
-
     #Variables
-    endBlock=5015800
+    endBlock=blockHeight
     depth=30*2880
     limit=8000
 
@@ -54,7 +53,7 @@ def calc():
 
 def main():
     load_dotenv()
-    calc()
+    calc(int(sys.argv[1]))
 
 if __name__ == "__main__":
     main()
